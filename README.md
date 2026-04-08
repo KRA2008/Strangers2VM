@@ -1,0 +1,1 @@
+An Android app that sends all phone calls that aren't from contacts directly to voicemail. This functionality exists natively on some devices, and there are many apps out there that do this already, however they also do many other things and sometimes charge money or have ads and aren't simple or private.
