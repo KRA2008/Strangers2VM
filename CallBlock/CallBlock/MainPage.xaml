@@ -1,16 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CallBlock.MainPage">
+             x:Class="CallBlock.MainPage"
+             BackgroundColor="Black">
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Label
-                Text="This app sends all incoming calls from unsaved numbers directly to voicemail. You can flip the switch below to turn it off when you need to."
-                SemanticProperties.HeadingLevel="Level1"/>
-            <Switch x:Name="Switch" Toggled="Switch_OnToggled"/>
-        </VerticalStackLayout>
+        <Grid
+            Padding="30,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Spacing="10"
+                Grid.Row="1">
+                <Label
+                    Text="This app sends all incoming phone calls from unsaved numbers directly to voicemail. Flip the switch below to turn it on or off."
+                    FontSize="20"/>
+                <Label
+                    Text="The first time you turn it on your phone will ask you to set the app as your default caller ID &amp; spam app. You have to do that. It will then ask for access to your contacts. You have to grant that too."
+                    FontSize="20"/>
+                <Label
+                    Text="This app does not send any data anywhere ever."
+                    FontSize="20"/>
+            </StackLayout>
+            <Switch x:Name="Switch" 
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    Toggled="Switch_OnToggled"/>
+        </Grid>
     </ScrollView>
 
 </ContentPage>

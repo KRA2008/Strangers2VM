@@ -5,7 +5,7 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using AndroidX.Core.App;
-using Microsoft.Maui;
+using CommunityToolkit.Mvvm.Messaging;
 
 namespace CallBlock
 {
@@ -23,11 +23,17 @@ namespace CallBlock
         {
             base.OnCreate(savedInstanceState);
 
-            ActivityCompat.RequestPermissions(Instance, [Manifest.Permission.ReadContacts],2);
+            WeakReferenceMessenger.Default.Register<TurnedOnMessage>(this, (recipient, message) =>
+            {
+                if (message.Value)
+                {
+                    ActivityCompat.RequestPermissions(Instance, [Manifest.Permission.ReadContacts], 2);
 
-            var roleManager = GetSystemService(Context.RoleService) as RoleManager;
-            var intent = roleManager.CreateRequestRoleIntent(RoleManager.RoleCallScreening);
-            StartActivityForResult(intent,1);
+                    var roleManager = GetSystemService(Context.RoleService) as RoleManager;
+                    var intent = roleManager.CreateRequestRoleIntent(RoleManager.RoleCallScreening);
+                    StartActivityForResult(intent, 1);
+                }
+            });
         }
     }
 }

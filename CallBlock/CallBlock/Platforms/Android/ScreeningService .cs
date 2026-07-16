@@ -15,7 +15,7 @@ public class ScreeningService : CallScreeningService
         var handle = callDetails.GetHandle();
         ICursor contact = null;
 
-        if (!Preferences.Get(MainPage.IS_ON, false)) return;
+        if (!Preferences.Get(MainPage.IS_ON_KEY, false)) return;
 
         if (handle != null)
         {
