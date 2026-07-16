@@ -1,8 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace CallBlock
+﻿namespace CallBlock
 {
-    public partial class App : Application
+    public partial class App
     {
         public App()
         {
@@ -11,7 +9,7 @@ namespace CallBlock
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            return new Window(new MainPage());
         }
     }
 }

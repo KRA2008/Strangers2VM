@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="456" height="456" viewBox="0 0 456 456" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="456" height="456" fill="#512BD4" />
+<svg
+   height="48"
+   viewBox="0 -960 960 960"
+   width="48"
+   fill="#ffffff"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="phone.svg"
+   inkscape:export-filename="..\Repos\CallBlock\CallBlock\CallBlock\Resources\AppIcon\appicon.svg"
+   inkscape:export-xdpi="1274.7405"
+   inkscape:export-ydpi="1274.7405"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffff00" />
+  <ellipse
+     style="display:none;opacity:0.7;fill:#0000ff;stroke-width:910.522;stroke-linecap:round;stroke-dashoffset:702.086"
+     id="path3"
+     cx="479.86798"
+     cy="-479.34665"
+     rx="478.29724"
+     ry="479.08261" />
+  <path
+     d="m 654.80943,-280.21779 q -64.37426,0 -131.2458,-31.07723 -66.87156,-31.07723 -124.03147,-88.23714 -57.15991,-57.15991 -88.23714,-124.03147 -31.07723,-66.87154 -31.07723,-131.2458 0,-10.70501 7.13666,-17.83612 7.13111,-7.13666 17.83612,-7.13666 h 77.69308 q 7.55287,0 13.49084,5.5495 5.93243,5.54951 7.59728,13.87377 l 14.94482,69.72399 q 1.14874,7.96909 -0.23863,14.35102 -1.38737,6.38193 -5.95462,10.94918 l -55.36742,55.92237 q 14.42871,24.41782 30.79976,45.22847 16.37104,20.81065 35.23936,40.23392 21.08812,21.08812 43.56362,38.56907 22.4755,17.48094 47.44828,30.79975 l 52.7203,-54.38516 q 5.54951,-6.10445 12.76387,-8.60173 7.21435,-2.49727 14.42871,-0.83242 l 66.03912,14.42871 q 8.4963,1.86464 13.96256,8.70163 5.46071,6.83699 5.46071,15.16125 v 74.91832 q 0,10.70501 -7.13666,17.83612 -7.13111,7.13666 -17.83612,7.13666 z m -314.10203,-259.71688 44.951,-45.50594 -12.76386,-61.04456 h -59.37971 q 1.10989,23.30792 7.49183,49.11312 6.38193,25.8052 19.70074,57.43738 z m 204.77677,201.44707 q 22.75298,10.54406 49.39061,17.20347 26.63762,6.65941 51.61039,7.7693 v -59.37971 L 589.32526,-384.5485 Z M 340.7074,-539.93467 Z m 204.77677,201.44707 z m 18.31337,-202.00201 -23.30793,-23.30793 46.06091,-46.61585 -46.06091,-46.0609 23.30793,-23.30792 46.61585,46.06089 46.0609,-46.06089 23.30792,23.30792 -46.06089,46.0609 46.06089,46.61585 -23.30792,23.30793 -46.0609,-46.06091 z"
+     id="path1"
+     style="stroke-width:0.55495" />
 </svg>

@@ -15,6 +15,8 @@ public class ScreeningService : CallScreeningService
         var handle = callDetails.GetHandle();
         ICursor contact = null;
 
+        if (!Preferences.Get(MainPage.IS_ON, false)) return;
+
         if (handle != null)
         {
             var number = handle.SchemeSpecificPart;

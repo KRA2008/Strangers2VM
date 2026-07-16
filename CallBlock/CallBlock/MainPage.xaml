@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CallBlock.MainPage">
-
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
             <Label
-                Text="This is a phone call screening app. It will send all incoming calls that aren't from your contacts directly to voicemail. That's all."
-                Style="{StaticResource Headline}"
+                Text="This app sends all incoming calls from unsaved numbers directly to voicemail. You can flip the switch below to turn it off when you need to."
                 SemanticProperties.HeadingLevel="Level1"/>
+            <Switch x:Name="Switch" Toggled="Switch_OnToggled"/>
         </VerticalStackLayout>
     </ScrollView>
 
