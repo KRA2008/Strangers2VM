@@ -3,6 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CallBlock.MainPage"
              BackgroundColor="Black">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ScrollView>
         <Grid
             Padding="30,0">
@@ -25,10 +33,14 @@
                     Text="This app does not send any data anywhere ever."
                     FontSize="20"/>
             </StackLayout>
-            <Switch x:Name="Switch" 
-                    Grid.Row="3"
-                    HorizontalOptions="Center"
-                    Toggled="Switch_OnToggled"/>
+            <Border Grid.Row="3"
+                    Stroke="White"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Padding="10"
+                    HorizontalOptions="Center">
+                <Switch x:Name="Switch" 
+                        Toggled="Switch_OnToggled"/>
+            </Border>
         </Grid>
     </ScrollView>
 
