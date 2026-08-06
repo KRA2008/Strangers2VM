@@ -38,11 +38,16 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-android|AnyCPU'">
 	  <ApplicationId>com.kra2008.UnsavedToVoicemail</ApplicationId>
 	  <ApplicationTitle>Unsaved to Voicemail</ApplicationTitle>
+	  <ApplicationVersion>3</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-android|AnyCPU'">
 	  <ApplicationId>com.kra2008.UnsavedToVoicemail</ApplicationId>
 	  <ApplicationTitle>Unsaved to Voicemail</ApplicationTitle>
+	  <AndroidLinkTool>r8</AndroidLinkTool>
+	  <EnableLLVM>True</EnableLLVM>
+	  <DebugSymbols>False</DebugSymbols>
+	  <ApplicationVersion>3</ApplicationVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
